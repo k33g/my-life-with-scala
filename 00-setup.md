@@ -80,7 +80,7 @@ mkdir lib project target
 A la racine du projet, céer un fichier `build.sbt` avec ce contenu:
 
 ```scala
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.0"
 ```
 
 ### Ajouter le support d'ENSIME au projet
