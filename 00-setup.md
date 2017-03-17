@@ -1,10 +1,11 @@
-# Ma vie avec Scala
+# Setup de "ma plateforme"
 
-J'utilise OSX, mais je proposerais des version Linux et Windows (quand j'aurais le temps 😝)
+- J'ai décider d'utiliser Visual Studio Code, un éditeur de code à base d'Electron (pas trop gourmand en ressource) codé par Microsoft
+- J'utilise OSX, mais je proposerais des version Linux et Windows (quand j'aurais le temps 😝)
 
 ## Installer SBT
 
-SBT? 
+SBT? C'est sbt l'outil de build par excellence quand on fait du Scala
 
 ### OSX
 
