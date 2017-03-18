@@ -155,9 +155,18 @@ Cela semble permettre des temps de compilations tout à fait respectables même 
 
 ## Quelques remarques
 
+### SBT
+
 Je ne suis pas obligé d'utiliser une structure de projet pour commencer à faire du Scala:
 
 Par exemple, si j'ai un répertoire avec plusieurs codes scala, je peux très bien lancer un `sbt run` directement.
+
+### Ensime + VSCODE
+
+Quelle que soit la structure de votre dossier (tout en vrac, des bouts de code à droite à gauche mais toujours dans des sous répertoires `src/main/scala`, ...), si il y a un fichier `.ensime` à la racine du répertoire, tout va bien, cela va fonctionner.
+
+Donc à la racine de votre répertoire, il faut lancer `sbt ensimeConfig`
+
 
 
 A suivre...
