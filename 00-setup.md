@@ -153,5 +153,11 @@ A partir de maintenant, votre projet va se compiler à chaque changement, et cel
 
 Cela semble permettre des temps de compilations tout à fait respectables même sur une petite configuration.
 
+## Quelques remarques
+
+Je ne suis pas obligé d'utiliser une structure de projet pour commencer à faire du Scala:
+
+Par exemple, si j'ai un répertoire avec plusieurs codes scala, je peux très bien lancer un `sbt run` directement.
+
 
 A suivre...
