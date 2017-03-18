@@ -52,7 +52,7 @@ import org.typeunsafe.User
 object Hello {
   def main(args: Array[String]) = {
 
-    var robot = new User("robot", "🤖")
+    var robot = User("robot", "🤖")
     println(s"${robot.name}: ${robot.avatar}")
 
   }        
@@ -75,12 +75,12 @@ import org.typeunsafe.User
 object Hello {
   def main(args: Array[String]) = {
 
-    var robot = new User("robot", "🤖")
+    var robot = User("robot", "🤖")
     println(s"${robot.name}: ${robot.avatar}")
 
     case class Toon(nickName: String, avatar: String)
 
-    println(new Toon("Elmira", "🐹"))
+    println(Toon("Elmira", "🐹"))
   }        
 }
 ```
@@ -95,21 +95,21 @@ import org.typeunsafe.User
 object Hello {
   def main(args: Array[String]) = {
 
-    var robot = new User("robot", "🤖")
+    var robot = User("robot", "🤖")
 
     println(s"${robot.name}: ${robot.avatar}")
 
     case class Toon(nickName: String, avatar: String)
 
-    println(new Toon("Elmira", "🐹"))
+    println(Toon("Elmira", "🐹"))
 
     implicit class ToonsImprovements(val t: Toon) {
       def yo: String = {
-        return s"Yo, I'm ${t.nickName} the ${t.avatar}"
+        s"Yo, I'm ${t.nickName} the ${t.avatar}"
       }
     }
 
-    println(new Toon("Babs", "🐰").yo) // Yo, I'm Babs the 🐰
+    println(Toon("Babs", "🐰").yo) // Yo, I'm Babs the 🐰
   }        
 }
 ```
