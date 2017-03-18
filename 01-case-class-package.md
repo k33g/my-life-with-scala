@@ -108,7 +108,9 @@ object Hello {
         s"Yo, I'm ${t.nickName} the ${t.avatar}"
       }
     }
-
+    // ne pas utiliser de `return` en Scal
+    // lire: https://tpolecat.github.io/2014/05/09/return.html
+    
     println(Toon("Babs", "🐰").yo) // Yo, I'm Babs the 🐰
   }        
 }
