@@ -109,6 +109,11 @@ ext install scala-lsp
 sbt ensimeConfig
 ```
 
+### Ajouter le support d'ENSIME pour Atom
+
+- http://ensime.org/editors/atom/installation/
+- WIP
+
 
 ## 1er code Scala pour vérifier
 
