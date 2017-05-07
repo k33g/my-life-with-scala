@@ -47,7 +47,7 @@ Voir http://ensime.org/build_tools/sbt/
 - dans `plugins.sbt` ajoutez:
 
 ```
-addSbtPlugin("org.ensime" % "sbt-ensime" % "1.12.5")
+addSbtPlugin("org.ensime" % "sbt-ensime" % "1.12.11")
 ```
 
 ## créer une structure de projet Scala
