@@ -80,7 +80,16 @@ mkdir lib project target
 A la racine du projet, céer un fichier `build.sbt` avec ce contenu:
 
 ```scala
-scalaVersion := "2.12.0"
+scalaVersion := "2.11.0"
+#scalaVersion := "2.12.0"
+```
+
+Si vous avez besoin d'une version plus récente de scala (ex: `scalaVersion := "2.12.0"`) qui nécessite une version "SNAPSHOT" d'ENSIME, il faut ajouter à votre projet un fichier `ensime.sbt`:
+
+```scala
+import org.ensime.EnsimeKeys._
+ensimeServerVersion in ThisBuild := "2.0.0-M1" // or "1.0.1"
+ensimeProjectServerVersion in ThisBuild := "2.0.0-M1" // or "1.0.1"
 ```
 
 ### Ajouter le support d'ENSIME au projet
